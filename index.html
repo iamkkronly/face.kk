@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Fukra Face Recognition</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body style="text-align:center; font-family:sans-serif;">
-  <h1>Bhaukaal Face Recognition</h1>
-  <form action="/upload" method="post" enctype="multipart/form-data">
-    <input type="file" name="file" accept="image/*" required>
-    <br><br>
-    <button type="submit">Upload Image</button>
-  </form>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Add a new task..." />
+      <button onclick="addTask()">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
